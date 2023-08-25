@@ -1,0 +1,29 @@
+Create a grocery store database
+
+
+CREATE TABLE gtstore (item_id INTEGER PRIMARY KEY, item TEXT, price INTEGER, aisle INTEGER, quantity INTEGER);
+
+INSERT INTO gtstore VALUES (1, "Gala Apples", .99, 2, 33);
+INSERT INTO gtstore VALUES (2, "Bananas", .49, 2, 46);
+INSERT INTO gtstore VALUES (3, "Granny Smith Green Apples", 1.22, 2, 11);
+INSERT INTO gtstore VALUES (4, "White Bread", 1.14, 4, 6);
+INSERT INTO gtstore VALUES (5, "Wheat Bread", 1.22, 4, 3);
+INSERT INTO gtstore VALUES (6, "Twinkies", 2.99, 6, 7);
+INSERT INTO gtstore VALUES (7, "OREOS", 3.99, 6, 14);
+INSERT INTO gtstore VALUES (8, "Nacho Cheese Doritos", 4.99, 7, 24);
+INSERT INTO gtstore VALUES (9, "Cool Ranch Doritos", 4.99, 7, 17);
+INSERT INTO gtstore VALUES (10, "Smores Poptarts", 2.89, 6, 5);
+INSERT INTO gtstore VALUES (11, "Pizza Rolls", 5.99, 10, 8);
+INSERT INTO gtstore VALUES (12, "Cream Cheeese 4pk", 3.98, 1, 56);
+INSERT INTO gtstore VALUES (13, "Ricotta Cheese", 4.56, 1, 12);
+INSERT INTO gtstore VALUES (14, "Cheddar Cheese", 2.98, 1, 22);
+INSERT INTO gtstore VALUES (15, "Large Eggs", 1.99, 1, 34);
+
+
+Display the database ordered by price
+
+SELECT * FROM gtstore ORDER BY price;
+
+What is the sum of the quantity from the grocery store?
+
+SELECT SUM(quantity) FROM gtstore;
